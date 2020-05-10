@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "copy-direct-link-command-set": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/copyDirectLink/CopyDirectLinkCommandSet.js",
+          "manifest": "./src/extensions/copyDirectLink/CopyDirectLinkCommandSet.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "CopyDirectLinkCommandSetStrings": "lib/extensions/copyDirectLink/loc/{locale}.js"
+  }
+}
