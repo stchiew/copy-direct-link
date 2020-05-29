@@ -1,5 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
+import { DialogContent } from '@fluentui/react/lib/Dialog';
 import { Callout } from '@fluentui/react/lib/Callout';
 import { TextField } from '@fluentui/react/lib/TextField';
 import { PrimaryButton } from '@fluentui/react/lib/Button';
@@ -32,20 +33,13 @@ export default class CopyLinkContent extends
   public render(): JSX.Element {
     return (
       <div>
-        <Callout
+        <DialogContent
+          title="Copy Direct Link"
           className="ms-CalloutExample-callout"
-          ariaLabelledBy={'callout-label-1'}
-          ariaDescribedBy={'callout-description-1'}
-          role={'alertdialog'}
-          gapSpace={0}
-          target={this.props.domElement}
-          hidden={false}
-          setInitialFocus={true}
-          onDismiss={this.onDismiss.bind(this)}>
+          showCloseButton={true}
+          onDismiss={this.onDismiss.bind(this)}
+        >
           <div className={styles.justALinkContentContainer}>
-            <div className={styles.iconCloseContainer}>
-              <IconButton iconProps={emojiIcon} title="Close" onClick={this.onDismiss.bind(this)} />
-            </div>
             <div className={styles.iconContainer} ><Icon iconName="CheckMark" className={styles.icon} /></div>
             <div className={styles.fileName}>Link {this.state.linkState}</div>
             <div className={styles.shareContainer}>
@@ -58,7 +52,7 @@ export default class CopyLinkContent extends
               />
             </div>
           </div>
-        </Callout>
+        </DialogContent>
       </div>
     );
   }
