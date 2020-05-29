@@ -8,14 +8,13 @@
     "isDomainIsolated": false,
     "features": [
       {
-        "title": "Application Extension - Deployment of custom action.",
-        "description": "Deploys a custom action with ClientSideComponentId association",
+        "title": "Copy Document Link Extension (spfx custom action)",
+        "description": "Provides a direct URI link to documents in libraries",
         "id": "a9dea0e8-9dea-4990-ad74-b258b8f96074",
         "version": "1.0.0.0",
         "assets": {
           "elementManifests": [
-            "elements.xml",
-            "ClientSideInstance.xml"
+            "elements.xml"
           ]
         }
       }

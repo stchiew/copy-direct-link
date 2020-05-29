@@ -7,7 +7,7 @@ import {
   IListViewCommandSetExecuteEventParameters
 } from '@microsoft/sp-listview-extensibility';
 import { Dialog } from '@microsoft/sp-dialog';
-
+import CopyDirectLinkComponent from './components/CopyDirectLinkComponent';
 import * as strings from 'CopyDirectLinkCommandSetStrings';
 
 /**
@@ -44,10 +44,19 @@ export default class CopyDirectLinkCommandSet extends BaseListViewCommandSet<ICo
   public onExecute(event: IListViewCommandSetExecuteEventParameters): void {
     switch (event.itemId) {
       case 'COMMAND_1':
-        Dialog.alert(`${this.properties.sampleTextOne}`);
-        break;
-      case 'COMMAND_2':
-        Dialog.alert(`${this.properties.sampleTextTwo}`);
+        let siteUrl = this.context.pageContext.site.absoluteUrl;
+        let endIndex = siteUrl.lastIndexOf('/sites/');
+        let rootSiteUrl = siteUrl.substring(0, endIndex);
+
+        let relativeUrl = event.selectedRows[0].getValueByName('FileRef');
+        let fileName = event.selectedRows[0].getValueByName('FileLeafRef');
+        let absoluteUrl = `${rootSiteUrl}${relativeUrl}`;
+
+        const callout: CopyDirectLinkComponent = new CopyDirectLinkComponent();
+        callout.fileName = encodeURI(fileName);
+        callout.absolutePath = encodeURI(absoluteUrl);
+        callout.show();
+
         break;
       default:
         throw new Error('Unknown command');
