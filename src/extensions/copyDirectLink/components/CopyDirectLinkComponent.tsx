@@ -11,7 +11,7 @@ export default class CopyDirectLinkComponent extends BaseDialog {
     ReactDOM.render(<CopyDirectLinkContent
       fileName={this.fileName}
       absolutePath={this.absolutePath}
-      domElement={document.activeElement.parentElement}
+      domElement={document.activeElement?.parentElement}
       onDismiss={this.onDismiss.bind(this)}
     />, this.domElement);
   }

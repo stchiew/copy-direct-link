@@ -1,10 +1,10 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/spfx-serve.schema.json",
   "port": 4321,
   "https": true,
   "serveConfigurations": {
     "default": {
-      "pageUrl": "https://pandalenses.sharepoint.com/sites/AppLab/Shared%20Documents/Forms/AllItems.aspx",
+      "pageUrl": "https://{tenantDomain}//sites/AppLab/Shared%20Documents/Forms/AllItems.aspx",
       "customActions": {
         "0023fcf8-d4fa-49fa-b52e-02619471a96d": {
           "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
@@ -16,7 +16,7 @@
       }
     },
     "copyDirectLink": {
-      "pageUrl": "https://pandalenses.sharepoint.com/sites/AppLab/Shared%20Documents/Forms/AllItems.aspx",
+      "pageUrl": "https://{tenantDomain}//sites/AppLab/Shared%20Documents/Forms/AllItems.aspx",
       "customActions": {
         "0023fcf8-d4fa-49fa-b52e-02619471a96d": {
           "location": "ClientSideExtension.ListViewCommandSet.CommandBar",

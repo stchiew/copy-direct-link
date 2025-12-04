@@ -1,10 +1,10 @@
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+//import * as ReactDOM from 'react-dom';
 import { DialogContent } from '@fluentui/react/lib/Dialog';
-import { Callout } from '@fluentui/react/lib/Callout';
+//import { Callout } from '@fluentui/react/lib/Callout';
 import { TextField } from '@fluentui/react/lib/TextField';
 import { PrimaryButton } from '@fluentui/react/lib/Button';
-import { IconButton, IIconProps, Icon } from '@fluentui/react';
+import {  Icon } from '@fluentui/react';
 import styles from './CopyDirectLinkComponent.module.scss';
 
 interface ICopyLinkContentProps {
@@ -17,7 +17,7 @@ interface ICopyLinkContentProps {
 interface ICopyLinkContentState {
   linkState: string;
 }
-const emojiIcon: IIconProps = { iconName: 'ChromeClose' };
+//const emojiIcon: IIconProps = { iconName: 'ChromeClose' };
 
 export default class CopyLinkContent extends
   React.Component<ICopyLinkContentProps, ICopyLinkContentState> {

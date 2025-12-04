@@ -6,9 +6,9 @@ import {
   IListViewCommandSetListViewUpdatedParameters,
   IListViewCommandSetExecuteEventParameters
 } from '@microsoft/sp-listview-extensibility';
-import { Dialog } from '@microsoft/sp-dialog';
+//import { Dialog } from '@microsoft/sp-dialog';
 import CopyDirectLinkComponent from './components/CopyDirectLinkComponent';
-import * as strings from 'CopyDirectLinkCommandSetStrings';
+//import * as strings from 'CopyDirectLinkCommandSetStrings';
 
 /**
  * If your command set uses the ClientSideComponentProperties JSON input,

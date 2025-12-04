@@ -2,12 +2,18 @@
   "@microsoft/generator-sharepoint": {
     "isCreatingSolution": true,
     "environment": "spo",
-    "version": "1.10.0",
     "libraryName": "copy-direct-link",
     "libraryId": "7f337a78-1927-4dcb-b5ec-a5fb9fef5599",
     "packageManager": "npm",
     "isDomainIsolated": false,
     "componentType": "extension",
-    "extensionType": "ListViewCommandSet"
+    "extensionType": "ListViewCommandSet",
+    "plusBeta": false,
+    "nodeVersion": "22.16.0",
+    "sdksVersions": {},
+    "version": "1.21.1",
+    "solutionName": "copy-direct-link",
+    "solutionShortDescription": "copy-direct-link description",
+    "skipFeatureDeployment": true
   }
 }

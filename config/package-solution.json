@@ -5,7 +5,26 @@
     "id": "7f337a78-1927-4dcb-b5ec-a5fb9fef5599",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
     "isDomainIsolated": false,
+        "developer": {
+          "name": "",
+          "websiteUrl": "",
+          "privacyUrl": "",
+          "termsOfUseUrl": "",
+          "mpnId": "Undefined-1.21.1"
+        },
+        "metadata": {
+          "shortDescription": {
+            "default": "copy direct link description"
+          },
+          "longDescription": {
+            "default": "copy direct link long description"
+          },
+          "screenshotPaths": [],
+          "videoUrl": "",
+          "categories": []
+        },
     "features": [
       {
         "title": "Copy Document Link Extension (spfx custom action)",
